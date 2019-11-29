@@ -1,7 +1,7 @@
 <?php 
 	$hostname = "localhost";
 	$username = "root";
-	$password = "";
+	$password = "115";
 	$db = "plexmusik";
 
 	$koneksi = new mysqli($hostname, $username, $password, $db);
