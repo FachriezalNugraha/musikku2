@@ -5,7 +5,7 @@ $nama= $_POST['nama'];
 $judul= $_POST['judul'];
 $alamat= $_POST['alamat'];
 $kategori= $_POST['kategori'];
-$logo='gambar/'.$_FILES['foto']['name'];
+$logo='musikku2/gambar/'.$_FILES['foto']['name'];
 $logo=mysqli_real_escape_string($koneksi,$logo);
 
 if(preg_match("!image!", $_FILES['foto']['type'])){
