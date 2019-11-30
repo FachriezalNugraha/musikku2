@@ -25,10 +25,6 @@ if(preg_match("!image!", $_FILES['foto']['type'])){
         echo "<script>alert('Data Tidak Tersimpan')</script>";
     }
 }
-else{
-    //$result="only upload jpg";
-    echo "<script>alert('Only Upload Photos!')</script>";
-}
 
 mysqli_close($koneksi);
 

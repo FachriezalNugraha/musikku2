@@ -5,7 +5,7 @@ $nama= $_POST['nama'];
 $judul= $_POST['judul'];
 $alamat= $_POST['alamat'];
 $kategori= $_POST['kategori'];
-$logo='gambar/'.$_FILES['foto']['name'];
+$logo='musikku2/gambar/'.$_FILES['foto']['name'];
 $logo=mysqli_real_escape_string($koneksi,$logo);
 
  $sql="UPDATE lagu1 SET id='$id', logo='$logo', nama='$nama',judul='$judul', kategori='$kategori', alamat='$alamat' where id='$id'";
