@@ -12,7 +12,7 @@ $logo=mysqli_real_escape_string($koneksi,$logo);
 //{
   //  if(copy($_FILES['foto']['tmp_name'], $logo))
    // {
-        $sql="INSERT INTO lagu1 values('$id', '$logo' , '$judul', '$nama', '$kategori', '$alamat')";
+        $sql="INSERT INTO lagu1 ('id', 'logo', 'nama', 'judul', 'kategori', 'alamat') values('$id', '$logo' , '$judul', '$nama', '$kategori', '$alamat')";
         if(mysqli_query($koneksi,$sql))
         {
            // $result="Berhasil";
