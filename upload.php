@@ -12,7 +12,7 @@ if(preg_match("!image!", $_FILES['foto']['type']))
 {
     if(copy($_FILES['foto']['tmp_name'], $logo))
     {
-        $sql="INSERT INTO lagu1 values('$id', '$logo' , '$nama', '$judul', '$kategori', '$alamat')";
+        $sql="INSERT INTO lagu1 values('$id', '$logo' , '$judul', '$nama', '$kategori', '$alamat')";
         if(mysqli_query($koneksi,$sql))
         {
            // $result="Berhasil";
