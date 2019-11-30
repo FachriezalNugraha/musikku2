@@ -12,8 +12,8 @@ $cek = mysqli_num_rows($data);
 if($cek > 0){
 	$_SESSION['username'] = $username;
 	$_SESSION['status'] = "login";
-	header("location:home1.php");
+	http_redirect("192.168.184.136/musikku2/home1.php");
 } else {
-	header("location:login.php?pesan=gagal");
+	http_redirect("192.168.184.132/musikku2/login.php?pesan=gagal");
 }
 ?>
