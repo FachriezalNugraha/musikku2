@@ -14,6 +14,6 @@ if($cek > 0){
 	$_SESSION['status'] = "login";
 	http_redirect("192.168.184.136/musikku2/home1.php");
 } else {
-	http_redirect("192.168.184.132/musikku2/login.php?pesan=gagal");
+	http_redirect("192.168.184.136/musikku2/login.php?pesan=gagal");
 }
 ?>
