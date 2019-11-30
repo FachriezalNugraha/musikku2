@@ -1,5 +1,5 @@
 <?php 
-	$hostname = "192.168.184.136";
+	$hostname = "192.168.43.175";
 	$username = "fachriezal";
 	$password = "123";
 	$db = "plexmusik";

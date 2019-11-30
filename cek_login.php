@@ -1,6 +1,6 @@
 <?php
 session_start();
-$query=new mysqli('192.168.184.136', 'fachriezal', '123', 'plexmusik');
+$query=new mysqli('192.168.43.175', 'fachriezal', '123', 'plexmusik');
 $username = $_POST['username'];
 $password = $_POST['password'];
 
