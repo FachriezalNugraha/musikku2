@@ -63,7 +63,7 @@ while ($data = mysqli_fetch_array($sql))
     ?>
     <tr>
       <th scope="row"><?php echo $data['id'];  ?></th>
-      <td style="text-align: center;"><img src="<?php echo $data['logo']?>" width="20%"> </td>
+      <td style="text-align: center;"><img src="<?php echo "musikku2/".$data['logo']?>" width="20%"> </td>
       <td><?php echo $data['nama'];  ?></td>
       <td><?php echo $data['judul'];  ?></td>
       <td><?php echo $data['kategori']; ?></td>
