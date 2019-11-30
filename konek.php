@@ -1,5 +1,5 @@
 <?php 
-	$hostname = "localhost";
+	$hostname = "http://192.168.184.136/";
 	$username = "root";
 	$password = "115";
 	$db = "plexmusik";
