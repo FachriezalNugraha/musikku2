@@ -22,7 +22,7 @@ if(empty($_SESSION['username']))
 
 <body>
     <div>
-        <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button" style="height:58px;">
+        <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button" style="height:58px; ackground-color: 1db954;">
             <div class="container"><a class="navbar-brand" href="#"><img src="assets/img/mysound.jpg" id="logo">Home Musik</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                    class="collapse navbar-collapse" id="navcol-1">
@@ -35,7 +35,7 @@ if(empty($_SESSION['username']))
     </div>
     </nav>
     </div>
- <div style="height: auto;  width: auto; border-top-left-radius: 40px; border-top-right-radius: 20px; background-color: #76D7C4; padding-left: 10px" class="form-input">
+ <div style="height: auto;  width: auto; border-top-left-radius: 40px; border-top-right-radius: 20px;  padding-left: 10px" class="form-input">
 
     
     <div>
@@ -52,7 +52,7 @@ $sql = mysqli_query($koneksi, $query);
 while ($data = mysqli_fetch_array($sql)) {
     ?>                
                     <div class="col-3" >
-                    <div class="card"><img class="card-img-top w-100 d-block" style="width: 100px; height: 100px" src="<?php echo $data['logo']; ?>">
+                    <div class="card"><img class="card-img-top w-100 d-block" style="width: 100px;  height: 100px" src="<?php echo $data['logo']; ?>">
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $data['nama']; ?></h4>
                             <p class="judul"><?php echo $data['judul']; ?></p>
