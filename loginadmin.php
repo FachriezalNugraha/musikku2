@@ -41,9 +41,9 @@ if($_GET['pesan']== "gagal")
                 <h2 class="text-center"><strong>Login</strong> admin.</h2>
                 <div class="form-group"><input class="form-control" type="text" name="username" placeholder="Username"></div>
                 <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Login</button></div>
+                <div class="form-group"><button class="btn btn-success btn-block" type="submit">Login</button></div>
             <p class="pemisah"><span style="text-decoration: line-through;"></span>or&nbsp;<span style="text-decoration: line-through;"></span></p>
-                <a class="btn btn-primary btn-block" role="button" href="signupadmin.php" style="background-color: #d8995d">Sign Up</a>
+                <a class="btn btn-primary btn-block" role="button" href="signupadmin.php" style="background-color: #28B463">Sign Up</a>
             </form>
         </div>
     </div>
