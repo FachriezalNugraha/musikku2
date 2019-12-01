@@ -66,6 +66,7 @@ while ($data = mysqli_fetch_array($sql))
       <td style="text-align: center;"><img src="<?php echo $data['logo']?>" width="40%"> </td>
       <td><?php echo $data['nama'];  ?></td>
       <td><?php echo $data['judul'];  ?></td>
+        <td><?php echo $data['kategori'];  ?></td>
       <td><a href= "hapus.php?id=<?php echo $data['id']?>"> Hapus </a></td>   
       <td><a href="edit.php?id=<?php echo $data['id']?>"> Edit </a>
 
