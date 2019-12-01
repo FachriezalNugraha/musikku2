@@ -47,7 +47,7 @@ if(empty($_SESSION['username']))
       <th scope="col">Nama Band</th>
       <th scope="col">Judul</th>
        <th scope="col">Kategori</th>
-      <th colspan="4">Option</th>
+      <th colspan="2">Option</th>
     </tr>
   </thead>
 <tbody>
