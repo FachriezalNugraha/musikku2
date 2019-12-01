@@ -83,7 +83,7 @@ if(empty($_SESSION['username']))
           <span class="shadow-input1"></span>
           </div>
           
-          <div class="wrap-input1 validate-input" data-validate = "Kategori is required">
+         <!--  <div class="wrap-input1 validate-input" data-validate = "Kategori is required">
           <input class="input1" type="table" name="Kategori"></input>
            <td></td>
               <td><select name="kategori">
@@ -94,8 +94,8 @@ if(empty($_SESSION['username']))
           <span class="shadow-input1"></span>
 </select>
 </td>
-</div>
-        <!--    <td>Kategori jenis lagu</td>
+</div> -->
+            <td>Kategori jenis lagu</td>
               <td></td>
               <td><select name="kategori">
                 <option value="Lagu Indonesia"> Lagu Indonesia </option>
