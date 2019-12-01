@@ -15,7 +15,7 @@ if(empty($_SESSION['username']))
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bakery</title>
+    <title>HOME MUSIK</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/-Login-form-Page-BS4-.css">
@@ -45,11 +45,11 @@ if(empty($_SESSION['username']))
     </div>
     </nav>
     </div>
-    <div style="height: 450px;  width: auto; border-top-left-radius: 60px; border-top-right-radius: 60px; padding-left: 10px"  class="form-input">
+    <div style="height: 450px;  width: auto; border-top-left-radius: 60px; border-top-right-radius: 60px; padding-left: 10px" background-color: #76D7C4" class="form-input">
 <center>
         <form method="POST" class="contact1-form validate-form" action="upload.php" enctype="multipart/form-data">
           <span class="contact1-form-title">
-          Get in touch
+          Edit Lagu
         </span>
             <?php
       include 'konek.php';
