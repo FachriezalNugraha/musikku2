@@ -72,10 +72,7 @@ while ($data = mysqli_fetch_array($sql)) {
                 </div>
                 <div class="col-12 col-sm-6 col-md-2">
                     <ul>
-                        <li><a href="daftarlagu.php?kategori=Lagu Indonesia">Lagu Indonesia</a></li>
-                        <li><a href="daftarlagu.php?kategori=Lagu Luar">Lagu Luar<br></a></li>
-                        <li><a href="daftarlagu.php?kategori=Religi">Religi</a></li>
-                        <li></li>
+                      <li><a href="daftarlagu.php?kategori=Lagu Indonesia">Lagu Indonesia</a><a href="daftarlagu.php?kategori=Lagu Luar">Lagu Luar<br></a><a href="daftarlagu.php?kategori=Religi">Religi</a></li>
                     </ul>
                 </div>
             </div>
