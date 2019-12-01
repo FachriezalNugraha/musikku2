@@ -35,7 +35,8 @@ if(empty($_SESSION['username']))
     </div>
     </nav>
     </div>
-
+ <div style="height: auto;  width: auto; border-top-left-radius: 60px; border-top-right-radius: 60px; padding-left: 10px" class="form-input">
+    
     <div>
         <div class="container" id="lagu1">
             <br><br>
@@ -44,8 +45,7 @@ if(empty($_SESSION['username']))
              ?>
            <h4> <?php echo $kategori; ?> 
           
-    <div class="row">
-    <div style="height: auto;  width: auto; background-color: #DEB887; border-top-left-radius: 50px; border-top-right-radius: 60px; padding-left: 10px" class="form-input">
+ 
 
 
 <?php 
