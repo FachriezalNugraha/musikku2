@@ -36,18 +36,14 @@ if(empty($_SESSION['username']))
     </nav>
     </div>
  <div style="height: auto;  width: auto; border-top-left-radius: 60px; border-top-right-radius: 60px; padding-left: 10px" class="form-input">
+
     
     <div>
         <div class="container" id="lagu1">
-            <br><br>
             <?php
             $kategori = $_GET['kategori'];
              ?>
-           <h4> <?php echo $kategori; ?> 
-          
- 
-
-
+           <h4> <?php echo $kategori; ?>           
 <?php 
 include "konek.php";
 
@@ -60,7 +56,7 @@ while ($data = mysqli_fetch_array($sql)) {
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $data['nama']; ?></h4>
                             <p class="judul"><?php echo $data['judul']; ?></p>
-                            <a class="btn btn-primary mb-2" role="button" href="<?php echo $data['alamat']; ?>">Download</a>
+                            <a class="btn btn-primary mb-2" role="button" href="<?php echo $data['alamat']; ?>">Dengarkan lagu</a>
                         </div>
                     </div>
                 </div>
