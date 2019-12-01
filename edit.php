@@ -78,16 +78,17 @@ if(empty($_SESSION['username']))
           <input class="input1" name="judul" placeholder="Judul Lagu" value="<?php echo $data['judul']; ?>"></input>
           <span class="shadow-input1"></span>
         </div>
-             <div class="wrap-input1 validate-input" data-validate = "Kategori lagu is required">
+
+         <div class="wrap-input1 validate-input" data-validate = "Kategori lagu is required">
           <label for="kategori">Kategori</label>
-          <select id="inputState" class="form-control">
+          <select id="kategori" class="form-control"  value="<?php echo $data['kategori']; ?>">
             <option selected>Choose...</option>
             <option value="Lagu Indonesia"> Lagu Indonesia </option>
             <option value="Lagu Luar"> Lagu Luar </option>
             <option value="Religi"> Religi </option>  
           </select>
           <span class="shadow-input1"></span>
-        </div> 
+        </div>
 
         <div class="wrap-input1 validate-input" data-validate = "Link file is required">
           <input class="input1" name="alamat" placeholder="Link file" value="<?php echo $data['alamat']; ?>"></input>
