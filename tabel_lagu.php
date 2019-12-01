@@ -31,22 +31,21 @@ if(empty($_SESSION['username']))
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Menu&nbsp;</a>
-                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="input.php">Tambahkan Lagu</a><a class="dropdown-item" role="presentation" href="tabel_lagu.php">Lagu</a></div>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="input.php">Add Music</a><a class="dropdown-item" role="presentation" href="tabelmenu.php">Music</a></div>
                         </li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="#"></a></li>
                     <a class="btn btn-light action-button" role="button" href="Logoutadmin.php">Logout</a></span></div>
     </div>
     </nav>
     </div>
-    <div style="height: auto;  width: auto; background-color: #DEB887; border-top-left-radius: 60px; border-top-right-radius: 60px; padding-left: 10px" class="form-input">
+    <div style="height: auto;  width: auto; border-top-left-radius: 60px; border-top-right-radius: 60px; padding-left: 10px" class="form-input">
 <table class="table">
   <thead class="thead-dark">
     <tr>
       <th scope="col">ID</th>
-      <th scope="col" style="text-align: center;">Logo</th>
+      <th scope="col" style="text-align: center;">Picture</th>
       <th scope="col">Nama Band</th>
       <th scope="col">Judul</th>
-      <th scope="col">Jenis lagu</th>
       <th colspan="4">Option</th>
     </tr>
   </thead>
@@ -63,10 +62,9 @@ while ($data = mysqli_fetch_array($sql))
     ?>
     <tr>
       <th scope="row"><?php echo $data['id'];  ?></th>
-      <td style="text-align: center;"><img src="<?php echo "musikku2/gambar/".$data['logo']?>" width="20%"> </td>
+      <td style="text-align: center;"><img src="<?php echo $data['logo']?>" width="40%"> </td>
       <td><?php echo $data['nama'];  ?></td>
       <td><?php echo $data['judul'];  ?></td>
-      <td><?php echo $data['kategori']; ?></td>
       <td><a href= "hapus.php?id=<?php echo $data['id']?>"> Hapus </a></td>   
       <td><a href="edit.php?id=<?php echo $data['id']?>"> Edit </a>
 
