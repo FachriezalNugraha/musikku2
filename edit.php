@@ -41,7 +41,7 @@ if(empty($_SESSION['username']))
                             <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="input.php">Tambahkan lagu</a><a class="dropdown-item" role="presentation" href="tabel_lagu.php">Daftar lagu</a></div>
                         </li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="#"></a></li>
-                    <a class="btn btn-light action-button" role="button" href="Logout.php">Logout</a></span></div>
+                    <a class="btn btn-light action-button" role="button" href="logoutadmin.php">Logout</a></span></div>
     </div>
     </nav>
     </div>
