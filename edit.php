@@ -38,7 +38,7 @@ if(empty($_SESSION['username']))
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Menu&nbsp;</a>
-                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="input.php">Add Menu</a><a class="dropdown-item" role="presentation" href="tabelmenu.php">Menu</a></div>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="input.php">Tambahkan lagu</a><a class="dropdown-item" role="presentation" href="tabel_lagu.php">Daftar lagu</a></div>
                         </li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="#"></a></li>
                     <a class="btn btn-light action-button" role="button" href="Logout.php">Logout</a></span></div>
