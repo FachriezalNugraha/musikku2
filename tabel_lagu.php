@@ -46,6 +46,7 @@ if(empty($_SESSION['username']))
       <th scope="col" style="text-align: center;">Picture</th>
       <th scope="col">Nama Band</th>
       <th scope="col">Judul</th>
+       <th scope="col">Kategori</th>
       <th colspan="4">Option</th>
     </tr>
   </thead>
