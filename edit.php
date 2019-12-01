@@ -47,7 +47,7 @@ if(empty($_SESSION['username']))
     </div>
     <div style="height: 450px;  width: auto; border-top-left-radius: 60px; border-top-right-radius: 60px; padding-left: 10px; background-color: 1db954; class="form-input" ">
 <center>
-        <form method="POST" class="contact1-form validate-form" action="upload.php" enctype="multipart/form-data">
+        <form method="POST" class="contact1-form validate-form" action="update.php" enctype="multipart/form-data">
           <span class="contact1-form-title">
           Edit Lagu
         </span>
