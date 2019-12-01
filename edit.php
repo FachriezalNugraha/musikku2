@@ -84,7 +84,7 @@ if(empty($_SESSION['username']))
           </div>
           
           <div class="wrap-input1 validate-input" data-validate = "Kategori is required">
-          <input class="input1" type="table" name="Kategori" value="<?php echo $data['Kategori']; ?>"></input>
+          <input class="input1" type="table" name="Kategori"></input>
            <td></td>
               <td><select name="kategori">
                 <option value="Lagu Indonesia"> Lagu Indonesia </option>
