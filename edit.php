@@ -86,7 +86,6 @@ if(empty($_SESSION['username']))
           <div class="wrap-input1 validate-input" data-validate = "Kategori is required">
           <input class="input1" select="Kategori" placeholder="Kategori" value="<?php echo $data['Kategori']; ?>"></input>
           <span class="shadow-input1"></span>
-</div>
            <td>Kategori jenis lagu</td>
               <td></td>
               <td><select name="kategori">
