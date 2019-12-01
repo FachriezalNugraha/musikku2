@@ -83,19 +83,11 @@ if(empty($_SESSION['username']))
           <span class="shadow-input1"></span>
           </div>
           
-         <!--  <div class="wrap-input1 validate-input" data-validate = "Kategori is required">
-          <input class="input1" type="table" name="Kategori"></input>
-           <td></td>
-              <td><select name="kategori">
-                <option value="Lagu Indonesia"> Lagu Indonesia </option>
-                <option value="Lagu Luar"> Lagu Luar </option>
-                <option value="Religi"> Religi </option>  
-                <span class="shadow-input1"></span>  
+          <div class="wrap-input1 validate-input" data-validate = "Kategori is required">
+          <input class="input1" select="Kategori" placeholder="Kategori" value="<?php echo $data['Kategori']; ?>"></input>
           <span class="shadow-input1"></span>
-</select>
-</td>
-</div> -->
-            <td>Kategori jenis lagu</td>
+</div>
+           <td>Kategori jenis lagu</td>
               <td></td>
               <td><select name="kategori">
                 <option value="Lagu Indonesia"> Lagu Indonesia </option>
@@ -108,7 +100,7 @@ if(empty($_SESSION['username']))
         </div>
         <div class="container-contact1-form-btn">
           <button class="contact1-form-btn">
-            <span> -->
+            <span>
               Submit
               <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
             </span>
