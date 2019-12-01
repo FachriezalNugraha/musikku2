@@ -32,7 +32,7 @@ if(empty($_SESSION['username']))
 
 <body>
     <div>
-        <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button" style="height:58px;">
+        <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button" style="height:58px; background-color: #76D7C4;">
             <div class="container"><a class="navbar-brand" href="#"><img src="assets/img/mysound.jpg" id="logo">HOME MUSIK</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
@@ -78,22 +78,22 @@ if(empty($_SESSION['username']))
           <input class="input1" name="judul" placeholder="Judul Lagu" value="<?php echo $data['judul']; ?>"></input>
           <span class="shadow-input1"></span>
         </div>
+             <div class="wrap-input1 validate-input" data-validate = "Kategori lagu is required">
+          <label for="kategori">Kategori</label>
+          <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option value="Lagu Indonesia"> Lagu Indonesia </option>
+            <option value="Lagu Luar"> Lagu Luar </option>
+            <option value="Religi"> Religi </option>  
+          </select>
+          <span class="shadow-input1"></span>
+        </div> 
+
         <div class="wrap-input1 validate-input" data-validate = "Link file is required">
           <input class="input1" name="alamat" placeholder="Link file" value="<?php echo $data['alamat']; ?>"></input>
           <span class="shadow-input1"></span>
           </div>
-          <span class="shadow-input1"></span>
-           <td>Kategori jenis lagu</td>
-              <td></td>
-              <td><select name="kategori">
-                <option value="Lagu Indonesia"> Lagu Indonesia </option>
-                <option value="Lagu Luar"> Lagu Luar </option>
-                <option value="Religi"> Religi </option>  
-                <span class="shadow-input1"></span>  
-          </select>
-            </td>
-            </tr>      
-        </div>
+          
         <div class="container-contact1-form-btn">
           <button class="contact1-form-btn">
             <span>

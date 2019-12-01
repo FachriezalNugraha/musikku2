@@ -46,9 +46,9 @@ if(empty($_SESSION['username']))
     </div>
     <div style="height: 450px;  width: auto; border-top-left-radius: 60px; border-top-right-radius: 60px; padding-left: 10px" background-color: #76D7C4" class="form-input">
 <center>
-        <form method="POST" class="contact1-form validate-form" action="upload.php" enctype="multipart/form-data">
+   <form method="POST" class="contact1-form validate-form" action="upload.php" enctype="multipart/form-data">
           <span class="contact1-form-title">
-       Tambahkan lagu
+          Tambahkan Lagu
         </span>
 
         <div class="wrap-input1 validate-input" data-validate = "ID Band is required">
@@ -70,6 +70,17 @@ if(empty($_SESSION['username']))
           <input class="input1" name="judul" placeholder="Judul Lagu"></input>
           <span class="shadow-input1"></span>
         </div>
+
+        <div class="wrap-input1 validate-input" data-validate = "Kategori lagu is required">
+          <label for="kategori">Kategori</label>
+          <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option value="Lagu Indonesia"> Lagu Indonesia </option>
+            <option value="Lagu Luar"> Lagu Luar </option>
+            <option value="Religi"> Religi </option>  
+          </select>
+          <span class="shadow-input1"></span>
+        </div>  
         <div class="wrap-input1 validate-input" data-validate = "Link file is required">
           <input class="input1" name="alamat" placeholder="Link file"></input>
           <span class="shadow-input1"></span>
