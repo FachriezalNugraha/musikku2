@@ -82,9 +82,6 @@ if(empty($_SESSION['username']))
           <input class="input1" name="alamat" placeholder="Link file" value="<?php echo $data['alamat']; ?>"></input>
           <span class="shadow-input1"></span>
           </div>
-          
-          <div class="wrap-input1 validate-input" data-validate = "Kategori is required">
-          <input class="input1" select="Kategori" placeholder="Kategori" value="<?php echo $data['Kategori']; ?>"></input>
           <span class="shadow-input1"></span>
            <td>Kategori jenis lagu</td>
               <td></td>
