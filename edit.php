@@ -70,23 +70,24 @@ if(empty($_SESSION['username']))
         </div>
 
         <div class="wrap-input1 validate-input" data-validate = "Nama Band is required">
-          <input class="input1" type="text" name="nama" placeholder="Nama Band" alue="<?php echo $data['nama']; ?>" >
+          <input class="input1" type="text" name="nama" placeholder="Nama Band" value="<?php echo $data['nama']; ?>" >
           <span class="shadow-input1"></span>
         </div>
 
         <div class="wrap-input1 validate-input" data-validate = "Judul lagu is required">
-          <input class="input1" name="judul" placeholder="Judul Lagu" alue="<?php echo $data['judul']; ?>"></input>
+          <input class="input1" name="judul" placeholder="Judul Lagu" value="<?php echo $data['judul']; ?>"></input>
           <span class="shadow-input1"></span>
         </div>
         <div class="wrap-input1 validate-input" data-validate = "Link file is required">
-          <input class="input1" name="alamat" placeholder="Link file" alue="<?php echo $data['alamat']; ?>"></input>
+          <input class="input1" name="alamat" placeholder="Link file" value="<?php echo $data['alamat']; ?>"></input>
           <span class="shadow-input1"></span>
            <td>Kategori jenis lagu</td>
               <td></td>
               <td><select name="kategori">
                 <option value="Lagu Indonesia"> Lagu Indonesia </option>
                 <option value="Lagu Luar"> Lagu Luar </option>
-                <option value="Religi"> Religi </option>    
+                <option value="Religi"> Religi </option>  
+                <span class="shadow-input1"></span>  
           </select>
             </td>
             </tr>      
