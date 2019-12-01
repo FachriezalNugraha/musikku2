@@ -21,12 +21,17 @@ if(empty($_SESSION['username']))
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/util.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css"> 
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 </head>
 
 <body>
     <div>
         <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button" style="height:58px;">
-            <div class="container"><a class="navbar-brand" href="#"><img src="assets/img/logo.jpg" id="logo">IF MUSIK</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container"><a class="navbar-brand" href="#"><img src="assets/img/mysound.jpg" id="logo">IF MUSIK</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
@@ -39,84 +44,46 @@ if(empty($_SESSION['username']))
     </div>
     </nav>
     </div>
-    <div style="height: 450px;  width: auto; background-color: #DEB887; border-top-left-radius: 60px; border-top-right-radius: 60px; padding-left: 10px"  class="form-input">
+    <div style="height: 450px;  width: auto; border-top-left-radius: 60px; border-top-right-radius: 60px; padding-left: 10px"  class="form-input">
+<center>
+        <form method="POST" class="contact1-form validate-form" action="upload.php" enctype="multipart/form-data">
+          <span class="contact1-form-title">
+          Get in touch
+        </span>
 
-            <center>
-              <h2>Tambahkan lagu</h2>
+        <div class="wrap-input1 validate-input" data-validate = "ID Band is required">
+          <input class="input1" type="text" name="id" placeholder="ID Band">
+          <span class="shadow-input1"></span>
+        </div>
 
-        <form method="POST" action="upload.php" enctype="multipart/form-data">
-            <table>
-            <tr>
-              <td>ID Band</td>
-              <td></td>
-              <td><input type="text" name="id"></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Logo</td>
-              <td></td>
-              <td><input type="file" name="foto"></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-                <tr>
-              <td>Nama Band</td>
-              <td>  </td>
-              <td><input type="text" name="nama"></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Judul</td>
-              <td></td>
-              <td><input type="text" name="judul"></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-                <tr>
-              <td>Link File</td>
-              <td></td>
-              <td><input type="text" name="alamat"></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-        <tr>            
-             <tr>
-              <td>Kategori jenis lagu</td>
-              <td></td>
-              <td><select name="kategori">
-                <option value="Lagu Indonesia"> Lagu Indonesia </option>
-                <option value="Lagu Luar"> Lagu Luar </option>
-                <option value="Religi"> Religi </option>    
-          </select>
-            </td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-        <tr>            
-            
-            
-              <td></td>
-              <td><input type="Submit" name="Submit" value="Submit"></td>
-            </tr>
+        <div class="wrap-input1 validate-input">
+          <input class="input1" type="file" name="foto">
+          <span class="shadow-input1"></span>
+        </div>
 
-          </table>
+        <div class="wrap-input1 validate-input" data-validate = "Nama Band is required">
+          <input class="input1" type="text" name="nama" placeholder="Nama Band">
+          <span class="shadow-input1"></span>
+        </div>
 
-        </form>
-        </center>
-
+        <div class="wrap-input1 validate-input" data-validate = "Judul lagu is required">
+          <input class="input1" name="judul" placeholder="Judul Lagu"></input>
+          <span class="shadow-input1"></span>
+        </div>
+        <div class="wrap-input1 validate-input" data-validate = "Link file is required">
+          <input class="input1" name="alamat" placeholder="Link file"></input>
+          <span class="shadow-input1"></span>
+        </div>
+        <div class="container-contact1-form-btn">
+          <button class="contact1-form-btn">
+            <span>
+              Submit
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+      </form>
+    </center>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
