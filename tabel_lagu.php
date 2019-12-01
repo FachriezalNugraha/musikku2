@@ -25,7 +25,7 @@ if(empty($_SESSION['username']))
 
 <body>
     <div>
-        <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button" style="height:58px;">
+        <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button" style="height:58px; background-color: #76D7C4">
             <div class="container"><a class="navbar-brand" href="#"><img src="assets/img/mysound.jpg" id="logo">Home Musik</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
