@@ -35,7 +35,7 @@ if(empty($_SESSION['username']))
     </div>
     </nav>
     </div>
- <div style="height: auto;  width: auto; border-top-left-radius: 60px; border-top-right-radius: 60px; padding-left: 10px" class="form-input">
+ <div style="height: auto;  width: auto; border-top-left-radius: 60px; border-top-right-radius: 60px; background-color: #76D7C4; padding-left: 10px" class="form-input">
 
     
     <div>
