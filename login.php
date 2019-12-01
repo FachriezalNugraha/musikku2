@@ -52,6 +52,7 @@ if($_GET['pesan']== "gagal")
                     <!-- <div class="card-footer"> -->
                 <div class="d-flex justify-content-center links">
                     Don't have an account?<a href="signup.php">Sign Up</a>
+                     <p class="pemisah"><span style="text-decoration: line-through;"></span> or&nbsp;<span style="text-decoration: line-through;"></span></p>
                 </div>
                     <p class="pemisah"><span style="text-decoration: line-through;"></span> or&nbsp;<span style="text-decoration: line-through;"></span></p>
                     <button 
