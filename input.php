@@ -48,7 +48,7 @@ if(empty($_SESSION['username']))
 <center>
         <form method="POST" class="contact1-form validate-form" action="upload.php" enctype="multipart/form-data">
           <span class="contact1-form-title">
-          Get in touch
+       Tambahkan lagu
         </span>
 
         <div class="wrap-input1 validate-input" data-validate = "ID Band is required">

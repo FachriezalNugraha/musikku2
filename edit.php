@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 if(empty($_SESSION['username']))
@@ -13,7 +14,7 @@ if(empty($_SESSION['username']))
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bakery</title>
+    <title>HOME MUSIK</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/-Login-form-Page-BS4-.css">
@@ -21,6 +22,11 @@ if(empty($_SESSION['username']))
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/util.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css"> 
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 </head>
 
 <body>
@@ -31,20 +37,21 @@ if(empty($_SESSION['username']))
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Menu&nbsp;</a>
-                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="input.php">Add Menu</a><a class="dropdown-item" role="presentation" href="tabel_lagu.php">Menu</a></div>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="input.php">Tambahkan Lagu</a><a class="dropdown-item" role="presentation" href="tabel_lagu.php">Daftar lagu</a></div>
                         </li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="#"></a></li>
-                    <a class="btn btn-light action-button" role="button" href="Logout.php">Logout</a></span></div>
+                   <a class="btn btn-light action-button" role="button" href="logoutadmin.php">Logout</a></span></div>
+              
     </div>
     </nav>
     </div>
-    <div style="height: 450px;  width: auto; background-color: #DEB887; border-top-left-radius: 60px; border-top-right-radius: 60px; padding-left: 10px"  class="form-input">
-
-            <center>
-              <h2>Edit Lagu</h2>
-
-        <form method="POST" action="update.php" enctype="multipart/form-data">
-          <table>
+    <div style="height: 450px;  width: auto; border-top-left-radius: 60px; border-top-right-radius: 60px; padding-left: 10px"  class="form-input">
+<center>
+        <form method="POST" class="contact1-form validate-form" action="update.php" enctype="multipart/form-data">
+          <span class="contact1-form-title">
+       Tambahkan lagu
+        </span>
+ <table>
             <?php
       include 'konek.php';
       $id=$_GET['id'];
@@ -120,6 +127,8 @@ if(empty($_SESSION['username']))
         </center>
 
     </div>
+
+     
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
